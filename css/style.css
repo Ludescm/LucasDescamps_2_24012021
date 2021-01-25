@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 body
 {
@@ -514,145 +513,29 @@ ul
     margin: 0;
     display: flex;
     flex-flow: column nowrap;
-} 
+}
 
 /*media queries iphone 8*/
-@media all and (max-width: 800px){
-
-    body
-    {
-        font-family: 'Raleway', sans-serif;
-        /*border: 2px solid black;*/
-        margin: 0;
-        padding: 0;
-    }
+@media screen and (max-width: 750px){
 
     #topHead
     {
-        border: 1px solid red;
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-
-    }
-
-    .topHead
-    {
-        border: 1px solid green;
-        width: 30%;
+        font-size: 1.5em;
+        flex-flow: column nowrap;
     }
 
     #topSearch
     {
-        width: 100%;
-        font-size: medium;
+        width: 75%;
+        font-size: 0.8em;
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-flow: row wrap-reverse;
+        align-items: flex-end;
         justify-content: space-between;
     }
 
-    #topSearch:nth-child(3)
-    {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .topSearch
-    {
-        border: 1px solid green;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .topSearch:nth-child(1)
-    {
-        width: 48%;
-    }
-
-    .topSearch:nth-child(2)
-    {
-        width: 48%;
-    }
     
-    .topSearch:nth-child(3)
-    {
-        width: 30%;
-        margin-left: 270px;
-        display: flex;
-        justify-content: flex-end;
-    }
 
-    /* nav */
-    #barreDeRecherche
-    {
-        border: 1px solid black;
-    }
 
-    #topTitre
-    {
-        border: 1px solid red;
-    }
-
-    .topTitre
-    {
-        border: 1px solid green;
-        font-size: 1.1em;
-        line-height: initial;
-    }
-
-    #searchButton
-    {
-        border: 1px solid red;
-        margin-left: 9%;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .searchButton
-    {
-        border: 1px solid green;
-    }
-
-    .rechercher
-    {
-        content: url();
-        width: 40%;
-        border-radius: 10px;
-    }
-
-    #topSearchBar
-    {
-        border: 1px solid red;
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .topSearchBar
-    {
-        border: 1px solid green;
-        font-size: large;
-    }
-
-    .searchBar
-    {
-        border: 1px solid blue;
-    }
-
-    #informations
-    {
-        border: 1px solid red;
-    }
-
-    .informations
-    {
-        border: 1px solid green;
-    }
-
-    #morePop
-    {
-        width: 90%;
-    }
 }/* fin balise media queries*/
