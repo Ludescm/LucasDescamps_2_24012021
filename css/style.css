@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    /*border: 2px solid black;*/
+    margin: 0;
+    padding: 0;
+}
+
+h3
+{
+    font-weight: bold;
+}
+/*haut de la page*/
+header
+{
+    /*border: 3px solid yellow;*/
+    margin-bottom: 20px;
+    padding: 0 45px;
+}
+
+#topHead
+{
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+#topSearch
+{
+    /*border: 1px solid red;*/
+    width: 30%;
+    font-size: x-small;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.topSearch
+{
+   /*border: 1px solid green;*/
+    font-size: 0.9em;
+}
+.topSearch:hover
+{
+    border-top: 3px solid #0065fc;
+}
+
+.topHeb, .topAct, .topInscr
+{
+    text-decoration: none;
+}
+
+.topHeb, .topInscr
+{
+    color: #0065fc;
+}
+
+.topAct
+{
+    color: black;
+}
+.topInscr
+{
+    font-weight: bolder;
+}
+
+/*Barre de recherche*/
+nav
+{
+    /*border: 3px solid yellow;*/
+    margin-bottom: 20px;
+    padding: 0 45px;
+}
+
+.topTitre
+{
+    /*border: 1px solid green;*/
+    line-height: 10px;
+    font-weight: bold;
+    font-size: x-small;
+}
+/*searchbar*/
+#searchButton
+{
+    width: 30%;
+    height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.searchButton
+{
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.marker
+{
+    /*border: 1px solid blue;*/
+    background-color: #f2f2f2;
+    width: 40px;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search
+{
+    border: none;
+    height: 100%;
+}
+
+.rechercher
+{
+    border: none;
+    background-color: #0065fc;
+    color: #f2f2f2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 90px;
+    height: 100%;
+}
+
+/*barre des filtres*/
+#topSearchBar
+{
+    /*border: 1px solid red;*/
+    width: 70%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.topSearchBar
+{
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    border-left: none;
+    padding-right: 10px;
+    height: 25px;
+    font-size: x-small;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.topSearchBar:hover
+{
+    background-color: #DEEBFF;
+    color: #0065fc;
+}
+
+.topSearchBar:nth-child(1)
+{
+    border: none;
+    background: none;
+}
+
+.searchText
+{
+    padding-left: 10px;
+}
+
+.icons
+{
+    border: 1px solid #f2f2f2;
+    background-color: #DEEBFF;
+    height: 35px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*informations*/
+#informations
+{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.informations
+{
+    /*border: 1px solid green;*/
+    margin-left: 10px;
+    font-size: x-small;
+}
+
+.fas, .fa-info-circle
+{
+    border: 1px #f2f2f2;
+    border-radius: 20px;
+    background-color: #0065fc;
+    color: #f2f2f2;
+}
+
+/*article en bloc*/
+article
+{
+    /*border: 3px solid yellow;*/
+    margin-bottom: 20px;
+    padding: 0 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*article de gauche*/
+#leftArticle
+{
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    width: 65%;
+}
+
+#leftTitre, #afficherPlus
+{
+    /*border: 1px solid red;*/
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#imgHebergements
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#imgHebergements >.imgHebergements_elements
+{
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 28%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 3px #f2f2f2;
+    display: flex;
+    flex-flow: column nowrap;
+    text-decoration: none;
+    color: black;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.imgCannebiere, .imgPort, .imgMouettes, .imgPort, .imgMer, .imgPanier, .imgAmina
+{
+    object-fit: cover;
+    height: 80px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+#textCannebiere, #textPort, #textMouettes, #textMer, #textPanier, #textAmina
+{
+    background-color: white;
+    padding-left: 10px;
+    line-height: 5px;
+}
+
+.textHebergements
+{
+    /*border: 1px solid;*/
+    font-size: 0.5em;
+}
+
+.etoiles
+{
+    /*border: 1px solid violet;*/
+    font-size: xx-small;
+    word-spacing: -0.3em;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.etoilebleu
+{
+    color: #0065fc;
+}
+
+.etoilenone
+{
+    color: #DEEBFF
+}
+
+#afficherPlus
+{
+    font-size: x-small;
+    font-weight: bold;
+}
+
+/*aside*/
+#morePop
+{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 30%;
+}
+
+ #titrePop
+{
+    /*border: 1px solid red;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#imgMorePop
+{
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#imgMorePop > .imgMorePop_elements
+{
+    /*border: 1px solid green;*/
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 1px 3px #f2f2f2;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.imgCoeur, .imgMatin, .imgBleuBlanc
+{
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    object-fit: cover;
+    width: 45%;
+    height: 100px;
+
+}
+
+#textMatin, #textCoeur, #textBleuBlanc
+{
+    /*border: 1px solid blue;*/
+    line-height: 0.5em;
+    padding-left: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.textMorePop
+{
+    font-size: 0.5em;
+}
+
+/*AsideMiddleBloc*/
+aside
+{
+    /*border: 3px solid yellow;*/
+    padding: 0 45px;
+    margin-bottom: 20px;
+}
+
+#Middle
+{
+    /*border: 1px solid black;*/
+    height: 90%;
+}
+
+#titreAside
+{
+   /* border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+}
+
+#imgActivites
+{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+#imgActivites > .imgActivites_elements
+{
+    border-radius: 20px;
+    width: 22%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.imgActivites_elements
+{
+    text-decoration: none;
+    color: black;
+}
+
+.grandeImg, .petiteImgHaut, .petiteImgBas
+{
+    border-radius: 20px;
+    box-shadow: 2px 5px #f2f2f2;
+    padding-bottom: 7px;
+    
+}
+
+img 
+{
+    max-width: 100%;
+}
+
+#imgVieuxPort, #imgParcDesCalanques
+{
+    /*border: 1px solid blue;*/
+    height: 270px;
+    object-fit: none;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+#imgFortDePomegues, #imgIlesDuFrioul, #imgNotreDame, #imgParcLongchamp
+{
+    /*border: 1px solid blue;*/
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.textBas
+{
+    font-size: x-small;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
+
+footer
+{
+    padding: 0 45px;
+    background-color: #f2f2f2;
+}
+
+#Bottom
+{
+    /*border: 1px solid red;*/
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    
+}
+
+.Bottom
+{
+    /*border: 1px solid green;*/
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Bottom_Text
+{
+    /*border: 1px solid blue;*/
+    width: 35%;
+    font-size: small;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+ul
+{
+    /*border: 1px solid blue;*/
+    line-height: 25px;
+    font-size: xx-small;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+} 
+
+/*media queries iphone 8*/
+@media all and (max-width: 800px){
+
+    body
+    {
+        font-family: 'Raleway', sans-serif;
+        /*border: 2px solid black;*/
+        margin: 0;
+        padding: 0;
+    }
+
+    #topHead
+    {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+    }
+
+    .topHead
+    {
+        border: 1px solid green;
+        width: 30%;
+    }
+
+    #topSearch
+    {
+        width: 100%;
+        font-size: medium;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
+
+    #topSearch:nth-child(3)
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .topSearch
+    {
+        border: 1px solid green;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topSearch:nth-child(1)
+    {
+        width: 48%;
+    }
+
+    .topSearch:nth-child(2)
+    {
+        width: 48%;
+    }
+    
+    .topSearch:nth-child(3)
+    {
+        width: 30%;
+        margin-left: 270px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* nav */
+    #barreDeRecherche
+    {
+        border: 1px solid black;
+    }
+
+    #topTitre
+    {
+        border: 1px solid red;
+    }
+
+    .topTitre
+    {
+        border: 1px solid green;
+        font-size: 1.1em;
+        line-height: initial;
+    }
+
+    #searchButton
+    {
+        border: 1px solid red;
+        margin-left: 9%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .searchButton
+    {
+        border: 1px solid green;
+    }
+
+    .rechercher
+    {
+        content: url();
+        width: 40%;
+        border-radius: 10px;
+    }
+
+    #topSearchBar
+    {
+        border: 1px solid red;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .topSearchBar
+    {
+        border: 1px solid green;
+        font-size: large;
+    }
+
+    .searchBar
+    {
+        border: 1px solid blue;
+    }
+
+    #informations
+    {
+        border: 1px solid red;
+    }
+
+    .informations
+    {
+        border: 1px solid green;
+    }
+
+    #morePop
+    {
+        width: 90%;
+    }
+}/* fin balise media queries*/
