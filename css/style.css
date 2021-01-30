@@ -385,7 +385,7 @@ a {
     grid-template-columns: 1fr;
     background-color: white;
     margin: 0 -40px;
-    padding: 20 10%;
+    padding: 20px;
   }
 }
 @media (max-width: 992px) {
@@ -394,7 +394,7 @@ a {
     grid-template-rows: auto repeat(3, 9rem);
     border: none;
     margin: 0 -45px;
-    padding: 20 10%;
+    padding: 20px;
   }
 }
 @media (max-width: 768px){
